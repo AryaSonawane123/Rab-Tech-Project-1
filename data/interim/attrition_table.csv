@@ -1,0 +1,9 @@
+step_id,criterion_name,retained_count,excluded_count,remaining_sglt2i,remaining_dpp4i
+0,Candidate Patients with Antidiabetic Dispensings,5000,0,2312,2319
+1,Continuous baseline enrollment >= 365 days,4629,371,2136,2154
+2,Active new-user washout (no prior SGLT2i/DPP4i in baseline),4192,437,1934,1946
+3,Initiation of SGLT2i or DPP4i index prescription,3880,312,1934,1946
+4,Age between 40 and 85 years at index date,3751,129,1861,1890
+5,Baseline eGFR >= 30.0 mL/min/1.73m² (no ESRD/dialysis),3723,28,1853,1870
+6,Incident cohort restriction (no prior MACE in baseline),3666,57,1824,1842
+7,Core demographic data completeness,3666,0,1824,1842

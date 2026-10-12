@@ -1,0 +1,126 @@
+{
+  "raw_record_count": 5000,
+  "raw_schema_valid": true,
+  "attrition_monotonic": true,
+  "eligible_cohort_size": 3666,
+  "matched_cohort_size": 2638,
+  "max_post_match_smd": 0.0484,
+  "primary_effect": {
+    "analysis_name": "Primary As-Treated 3-Point MACE",
+    "hazard_ratio": 0.7769,
+    "ci_lower": 0.6107,
+    "ci_upper": 0.9882,
+    "p_value": 0.03973,
+    "e_value_estimate": 1.895,
+    "e_value_ci_bound": 1.122,
+    "schoenfeld_ph_pvalue": 0.6115
+  },
+  "negative_control": {
+    "analysis_name": "Negative Control (Trauma/Fracture)",
+    "hazard_ratio": 1.0761,
+    "ci_lower": 0.8102,
+    "ci_upper": 1.4292,
+    "p_value": 0.61265,
+    "e_value_estimate": 1.362,
+    "e_value_ci_bound": 1.772,
+    "schoenfeld_ph_pvalue": 0.4299
+  },
+  "robustness_checks_passed": true,
+  "execution_status": "ALL_CONTRACTS_SATISFIED",
+  "secondary_analyses": {
+    "itt_effect": {
+      "analysis_name": "Sensitivity ITT 3-Point MACE",
+      "hazard_ratio": 0.7658,
+      "ci_lower": 0.6155,
+      "ci_upper": 0.9528,
+      "p_value": 0.01667,
+      "e_value_estimate": 1.938,
+      "e_value_ci_bound": 1.278,
+      "schoenfeld_ph_pvalue": 0.5491
+    },
+    "absolute_risk": {
+      "cumulative_incidence_comparator": 0.1137,
+      "cumulative_incidence_exposure": 0.0902,
+      "absolute_risk_reduction": 0.0235,
+      "number_needed_to_treat": 42.5
+    },
+    "caliper_width": 0.091,
+    "balance_table": [
+      {
+        "covariate_name": "age",
+        "smd_pre_match": 0.0829,
+        "smd_post_match": 0.0148
+      },
+      {
+        "covariate_name": "baseline_hba1c",
+        "smd_pre_match": 0.2987,
+        "smd_post_match": 0.0072
+      },
+      {
+        "covariate_name": "baseline_egfr",
+        "smd_pre_match": 0.0667,
+        "smd_post_match": 0.0117
+      },
+      {
+        "covariate_name": "baseline_sbp",
+        "smd_pre_match": 0.0089,
+        "smd_post_match": 0.0321
+      },
+      {
+        "covariate_name": "baseline_ldl",
+        "smd_pre_match": 0.0114,
+        "smd_post_match": 0.0259
+      },
+      {
+        "covariate_name": "female",
+        "smd_pre_match": 0.0263,
+        "smd_post_match": 0.0167
+      },
+      {
+        "covariate_name": "baseline_ascvd",
+        "smd_pre_match": 0.1063,
+        "smd_post_match": 0.0
+      },
+      {
+        "covariate_name": "baseline_hypertension",
+        "smd_pre_match": 0.0056,
+        "smd_post_match": 0.0076
+      },
+      {
+        "covariate_name": "baseline_heart_failure",
+        "smd_pre_match": 0.0866,
+        "smd_post_match": 0.0
+      },
+      {
+        "covariate_name": "smoking_current",
+        "smd_pre_match": 0.0126,
+        "smd_post_match": 0.0484
+      },
+      {
+        "covariate_name": "t2dm_duration_gt5y",
+        "smd_pre_match": 0.0064,
+        "smd_post_match": 0.0031
+      },
+      {
+        "covariate_name": "baseline_metformin",
+        "smd_pre_match": 0.0031,
+        "smd_post_match": 0.0157
+      },
+      {
+        "covariate_name": "baseline_statin",
+        "smd_pre_match": 0.1436,
+        "smd_post_match": 0.0111
+      },
+      {
+        "covariate_name": "baseline_ace_arb",
+        "smd_pre_match": 0.0219,
+        "smd_post_match": 0.0173
+      },
+      {
+        "covariate_name": "baseline_beta_blocker",
+        "smd_pre_match": 0.0719,
+        "smd_post_match": 0.0262
+      }
+    ]
+  }
+}
